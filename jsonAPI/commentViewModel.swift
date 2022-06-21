@@ -9,7 +9,7 @@ import Foundation
 
 class apiCall {
     func getUserComments(completion:@escaping ([Comments]) -> ()) {
-        guard let url = URL(string: "https://jsonplaceholder.typicode.com/posts/1/comments") else { return }
+        guard let url = URL(string: "http://ergast.com/api/f1/2022/drivers.json") else { return }
         
         URLSession.shared.dataTask(with: url) { (data, _, _) in
             let comments = try! JSONDecoder().decode([Comments].self, from: data!)

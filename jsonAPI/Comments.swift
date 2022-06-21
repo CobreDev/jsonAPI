@@ -9,8 +9,8 @@ import SwiftUI
 
 struct Comments: Codable, Identifiable {
     let id = UUID()
-    let name: String
-    let email: String
-    let body: String
+    let givenName: String
+    let familyName: String
+    let url: String
     
 }
