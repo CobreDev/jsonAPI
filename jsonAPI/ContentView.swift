@@ -9,36 +9,36 @@ import SwiftUI
 
 struct ContentView: View {
     //1.
-    @State var comments = [Comments]()
+    @State var drivers = [Drivers]()
     
     var body: some View {
         NavigationView {
             //3.
-            List(comments) { comment in
+            List(drivers) { driver in
                 VStack(alignment: .leading) {
-                    Text(comment.name)
+                    Text(driver.givenName)
                         .font(.title)
                         .fontWeight(.bold)
-                    Text(comment.email)
+                    Text(driver.familyName)
                         .font(.subheadline)
                         .fontWeight(.bold)
-                    Text(comment.body)
+                    Text(driver.url)
                         .font(.body)
                 }
                 
             }
             //2.
             .onAppear() {
-                apiCall().getUserComments { (comments) in
-                    self.comments = comments
+                apiCall().getUserComments { (drivers) in
+                    self.drivers = drivers
                 }
-            }.navigationTitle("Comments")
+            }.navigationTitle("Drivers")
         }
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
+//struct ContentView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ContentView()
+//    }
+//}
