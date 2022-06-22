@@ -8,15 +8,17 @@
 import Foundation
 
 class apiCall {
-    func getUserComments(completion:@escaping ([Comments]) -> ()) {
-        guard let url = URL(string: "https://jsonplaceholder.typicode.com/posts/1/comments") else { return }
+    func getUserComments(completion:@escaping ([Drivers]) -> ()) {
+        guard let url = URL(string: "http://ergast.com/api/f1/2022/drivers.json") else { return }
         
         URLSession.shared.dataTask(with: url) { (data, _, _) in
-            let comments = try! JSONDecoder().decode([Comments].self, from: data!)
-            print(comments)
+//            let drivers = try! JSONDecoder().decode([Drivers].self, from: data!)
+            let drivers = try! JSONDecoder().decode(Root.self, from: data!)
+            print("drivers", drivers.mrdata.drivertable.drivers.givenName)
+//            print(drivers)
             
             DispatchQueue.main.async {
-                completion(comments)
+                completion(drivers)
             }
         }
         .resume()

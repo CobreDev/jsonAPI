@@ -16,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F1C30B92862947C00C23A9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		0F2632C528628E3000FE9360 /* Comments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comments.swift; sourceTree = "<group>"; };
 		0F2632C728628E4A00FE9360 /* commentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = commentViewModel.swift; sourceTree = "<group>"; };
 		0FC2620828628785006FACFC /* jsonAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jsonAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,6 +56,7 @@
 		0FC2620A28628785006FACFC /* jsonAPI */ = {
 			isa = PBXGroup;
 			children = (
+				0F1C30B92862947C00C23A9B /* Info.plist */,
 				0FC2620B28628785006FACFC /* jsonAPIApp.swift */,
 				0FC2620D28628785006FACFC /* ContentView.swift */,
 				0F2632C528628E3000FE9360 /* Comments.swift */,
@@ -278,6 +280,7 @@
 				DEVELOPMENT_TEAM = 6755LPJ5W2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = jsonAPI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -307,6 +310,7 @@
 				DEVELOPMENT_TEAM = 6755LPJ5W2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = jsonAPI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
