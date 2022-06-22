@@ -2,7 +2,7 @@
 //  commentViewModel.swift
 //  jsonAPI
 //
-//  Created by Cooper Hull on 6/21/22.
+//  Created by Cobre on 6/21/22.
 //
 
 import Foundation
@@ -18,7 +18,8 @@ class apiCall {
 //            print(drivers)
             
             DispatchQueue.main.async {
-                completion(drivers)
+//                completion(drivers)
+                completion(drivers.mrdata.drivertable.drivers)
             }
         }
         .resume()

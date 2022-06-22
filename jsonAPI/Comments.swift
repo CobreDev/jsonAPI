@@ -2,7 +2,7 @@
 //  Comments.swift
 //  jsonAPI
 //
-//  Created by Cooper Hull on 6/21/22.
+//  Created by Cobre on 6/21/22.
 //
 
 import SwiftUI
